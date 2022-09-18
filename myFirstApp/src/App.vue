@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    
+    <Header></Header>
     <PostExample/>
   </div>
 </template>
@@ -8,12 +8,14 @@
 <script>
 import HelloWorld from './components/HelloWorld'
 import PostExample from './components/Posts'
+import Header from './components/Header'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    PostExample
+    PostExample,
+    Header
   }
 }
 </script>
