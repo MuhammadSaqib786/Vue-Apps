@@ -1,10 +1,10 @@
 <template>
-<div>
+<div  class="container">
     <h3>
         Hi.. Welcome Saqib to your first component
     </h3>
     Below are some langauges you should learn:
-    <table class="table table-success">
+    <table class="table table-success mt-4">
   <thead>
     <tr>
       <th scope="col">Id</th>
