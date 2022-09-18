@@ -1,8 +1,8 @@
 {
-  "name": "firstapp",
+  "name": "myfirstapp",
   "version": "1.0.0",
-  "description": "My first app",
-  "author": "Saqib",
+  "description": "fist vue pro",
+  "author": "saqib",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",

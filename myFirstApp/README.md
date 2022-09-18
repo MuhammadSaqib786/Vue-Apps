@@ -1,6 +1,6 @@
-# firstapp
+# myfirstapp
 
-> My first app
+> fist vue pro
 
 ## Build Setup
 
