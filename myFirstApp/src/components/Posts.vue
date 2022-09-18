@@ -4,9 +4,23 @@
         Hi.. Welcome Saqib to your first component
     </h3>
     Below are some langauges you should learn:
-    <ul>
-        <li v-for='post in posts' @key="id">{{post.title}}</li>
-    </ul>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Language</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-for='post in posts' @key="id">
+      <th scope="row">{{post.id}}</th>
+      <td>{{post.title}}</td>
+      
+    </tr>
+    
+  </tbody>
+</table>
+    
     <button class="btn btn-primary">Let's Get Started</button>
 </div>
 </template>
