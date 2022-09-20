@@ -15,7 +15,8 @@
   </thead>
   <tbody>
     <tr v-for='post in posts' @key="post.id">
-      <th scope="row">{{post.id}}</th>
+      <th scope="row">{{post.userId}}</th>
+      <td>{{post.id}}</td>
       <td>{{post.title}}</td>
       <td>{{post.body}}</td>
     </tr>
@@ -41,7 +42,9 @@ export default{
     },
     created()
     {
-        console.log("craeted cycle");
+        axios.get('https://jsonplaceholder.typicode.com/posts').then(posts=>{
+            this.posts=posts.data
+        });
     }
 }
 
