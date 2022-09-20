@@ -7,18 +7,18 @@
     <table class="table table-success mt-4">
   <thead>
     <tr>
-      <th scope="col">UserId</th>
+      <th scope="col">albumId</th>
       <th scope="col">Id</th>
       <th scope="col">Title</th>
-      <th scope="col">Body</th>
+      <th scope="col">Image</th>
     </tr>
   </thead>
   <tbody>
     <tr v-for='post in posts' @key="post.id">
-      <th scope="row">{{post.userId}}</th>
+      <th scope="row">{{post.albumId}}</th>
       <td>{{post.id}}</td>
       <td>{{post.title}}</td>
-      <td>{{post.body}}</td>
+      <td><img :src="post.url" alt="img" class="img" height="200px"></td>
     </tr>
     
   </tbody>
@@ -42,7 +42,7 @@ export default{
     },
     created()
     {
-        axios.get('https://jsonplaceholder.typicode.com/posts').then(posts=>{
+        axios.get('https://jsonplaceholder.typicode.com/photos').then(posts=>{
             this.posts=posts.data
         });
     }
