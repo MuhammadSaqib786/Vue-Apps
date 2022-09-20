@@ -3,13 +3,14 @@
     <h3>
         Hi.. Welcome Saqib to your first component
     </h3>
-    Below are some langauges you should learn:
+    Below data from jsonplaceholder API:
     <table class="table table-success mt-4">
   <thead>
     <tr>
+      <th scope="col">UserId</th>
       <th scope="col">Id</th>
-      <th scope="col">Language</th>
-      <th scope="col">Usage</th>
+      <th scope="col">Title</th>
+      <th scope="col">Body</th>
     </tr>
   </thead>
   <tbody>
@@ -33,12 +34,7 @@ export default{
     data(){
         return{
             posts:[
-                {id:1,title:'C++',body:'This is simple langauge to start learn programming.'},
-                {id:2,title: 'Java',body:'This is more advanced langauge.'},
-                {id:3,title:'Python',body:'Best langauge used for machine learning and AI.'},
-                {id:4,title: 'C#',body:'Best for web app development purposes'},
-                {id:5,title:'VB',body:'Thats also alternate to C# langauge.'},
-                {id:6,title: 'Kotlin',body:'Best langauge used now a days for android application development.'},
+                
             ]
         }
     }
