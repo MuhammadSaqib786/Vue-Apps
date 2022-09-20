@@ -28,6 +28,7 @@
 </template>
 
 <script>
+    import axios from 'axios';
 export default{
 
     name: 'PostExample',
@@ -37,6 +38,10 @@ export default{
                 
             ]
         }
+    },
+    created()
+    {
+        console.log("craeted cycle");
     }
 }
 
