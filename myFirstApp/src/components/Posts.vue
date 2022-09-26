@@ -4,7 +4,7 @@
         Hi.. Welcome Saqib to your first component
     </h3>
     Below data from jsonplaceholder API:
-    <table class="table table-success mt-4">
+    <table class="table table-success table-responsive mt-4">
   <thead>
     <tr>
       <th scope="col">albumId</th>
