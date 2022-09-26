@@ -14,7 +14,7 @@ const routes=[
 
 ];
 
-
+const router = new VueRouter({routes: routes});
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
