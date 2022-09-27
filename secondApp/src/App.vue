@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header></Header>
-    <PostExample/>
+    <router-view> </router-view>
   </div>
 </template>
 
@@ -9,13 +9,15 @@
 import HelloWorld from './components/HelloWorld'
 import PostExample from './components/Posts.vue'
 import Header from './components/Header'
+import Contact from './components/Contact'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     PostExample,
-    Header
+    Header,
+    Contact
   }
 }
 </script>
